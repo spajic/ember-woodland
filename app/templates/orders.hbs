@@ -1,4 +1,7 @@
 <h3>Orders</h3>
+{{#each model as |order|}}
+  {{order.id}} - {{order.name}}<br>
+{{/each}}
 
 {{#link-to "index"}}Index{{/link-to}}
 

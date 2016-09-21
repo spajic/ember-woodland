@@ -1,6 +1,8 @@
 <h3>Orders</h3>
 {{#each model as |order|}}
-  {{order.id}} - {{order.name}}<br>
+  {{#link-to "order" order}}
+    {{order.id}} - {{order.name}}<br>
+  {{/link-to}}
 {{/each}}
 
 {{#link-to "index"}}Index{{/link-to}}

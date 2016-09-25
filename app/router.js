@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('orders', function() {
     this.route('order', { path: 'orders/:order_id' });
   });
+  this.route('products');
 });
 
 export default Router;
